@@ -16,4 +16,8 @@ React SSR using Express.js and React-Router-DOM
 
 ### nodemon and ts-node setting
 
-- Check scripts in the package setting
+Check scripts in the package setting
+
+## You must include ignore-styles
+
+ignore-styles make babel to ignore importing css and image in js file
