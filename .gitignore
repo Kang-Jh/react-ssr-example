@@ -11,6 +11,9 @@
 # production
 /build
 
+# babel produce js file
+*.js
+
 # misc
 .DS_Store
 .env.local
