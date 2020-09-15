@@ -21,4 +21,4 @@ Check scripts in the package setting
 
 ## Running Scripts Caution
 
-1. You should always build first, because all files in the build directory is send, not in the src directory
+1. You should always build first, because all files in the build directory is sent, not in the src directory
