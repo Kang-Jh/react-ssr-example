@@ -4,20 +4,22 @@ React SSR using Express.js and React-Router-DOM
 
 ## How To Set SSR
 
+Setting is simpler than ejecting
+
 ### Babel and Typescript setting
 
-1. First create server directory and create index.tsx file in server directory(which uses tsx for server-side rendering)
-2. Create tsconfig.json file inside the server directory which extends root tsconfig
-3. Root tsconfig must have allowJs: false
+1. First create server directory and create index.tsx files in server directory
+2. Create tsconfig.json file in the server directory that extends root directory's tsconfig
+3. In development, Root tsconfig must have allowJs: false to run in ts-node (https://github.com/TypeStrong/ts-node/issues/693)
 4. Install devDependencies in the package.json file(You can see in package.json)
 5. Create babel.config.json file and set the options
-6. Add import 'ignore-styles' on top of the server/index.tsx
-7. Set scripts to compile files (check in the package.json)
+6. Set scripts to compile files (check in the package.json)
 
 ### nodemon and ts-node setting
 
 Check scripts in the package setting
 
-## You must include ignore-styles
+## Running Scripts Caution
 
-ignore-styles make babel to ignore importing css and image in js file
+1. You should always build first, because all files in the build directory is send.
+2. Compile command must run on the root directory of the project.

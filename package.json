@@ -49,9 +49,8 @@
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "@babel/preset-typescript": "^7.10.4",
-    "@babel/register": "^7.11.5",
+    "babel-plugin-not-js-import-remover": "^0.1.0",
     "core-js": "3",
-    "ignore-styles": "^5.0.1",
     "nodemon": "^2.0.4",
     "ts-node": "^9.0.0"
   }
