@@ -12,7 +12,7 @@ Setting is simpler than ejecting
 2. Create tsconfig.json file in the server directory that extends root directory's tsconfig
 3. In development, Root tsconfig must have allowJs: false to run in ts-node (https://github.com/TypeStrong/ts-node/issues/693)
 4. Install devDependencies in the package.json file(You can see in package.json)
-5. Create babel.config.json file and set the options
+5. Create babel.config.json file and configure it (You can see config file)
 6. Set scripts to compile files (check in the package.json)
 
 ### nodemon and ts-node setting
@@ -21,5 +21,4 @@ Check scripts in the package setting
 
 ## Running Scripts Caution
 
-1. You should always build first, because all files in the build directory is send.
-2. Compile command must run on the root directory of the project.
+1. You should always build first, because all files in the build directory is send, not in the src directory
